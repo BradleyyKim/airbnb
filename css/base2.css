@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
+*{margin:0; padding:0;}
+body,header{
+    font-family: 'Shippori Mincho B1', serif;
+    font-family: 'Noto Serif KR', serif;
+    font-size:12px;
+    line-height:18px;
+    color:#000;
+}
+ul,li{list-style:none;}
+a{text-decoration:none; color:inherit;}
+.clear:after{
+    display:block;
+    content:'';
+    clear:both;
+}
+img{
+    vertical-align:top;
+}

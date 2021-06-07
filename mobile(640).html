@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>airbnb_mobile</title>
+  <link rel="stylesheet" href="/css/base2.css">
+  <link rel="stylesheet" href="/css/style(mobile).css">
+  <script src="https://kit.fontawesome.com/aaef263f39.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="wrap">
+    <header id="header">
+      <div class="mainBg"></div><!-- mainBg -->
+      <div class="menu"><a href=""><i class="fas fa-bars"></i></a></div><!-- menu -->
+      <h2 class="logo"><a href=""><i class="fab fa-airbnb"></i><span>airbnb</span></a></h2><!-- logo -->
+      <div class="search"><a href=""><i class="fas fa-search"></i></a></div><!-- search -->
+      <h3 class="bgTxt"><a href=""><p>어디로 가고 싶으신가요?</p></a></h3><!-- bgTxt -->
+    </header><!-- header -->
+    <section id="container">
+      <div class="cont1 clear">
+          <h2>에어비앤비에서 숙소를 경험하세요.</h2>
+          <p>혼자 하는 여행에 적합한 개인실부터 여럿이 함께하는 여행에 좋은<br>
+          '공간 전체' 숙소까지, 에어비앤비에 다 있습니다.</p>
+          <ul class="location1">
+              <input class="input1"
+                type="text"
+                placeholder="Location"
+                id="keyword"
+                name="keyword"
+              />
+              <input class="input2 lo1Input2" list="places" name="browser" id="browser">
+              <datalist id="places">
+                <option value="Seoul . South Korea .">
+                <option value="Busan . South Korea .">
+                <option value="Dallas . United State America .">
+                <option value="Paris . France .">
+                <option value="New York . United State America .">
+              </datalist>
+          </ul>
+          <ul class="location2">
+              <input class="input1"
+                type="text"
+                placeholder="Check-in"
+                id="keyword"
+                name="keyword"
+              />
+              <input class="input2"
+                type="date"
+                name="trip-start"
+                value="2021-03-17"
+                min="2021-03-17"
+                max="2021-12-31"
+            />
+          </ul>
+          <ul class="location3">
+              <input class="input1"
+                type="text"
+                placeholder="Check-out"
+                id="keyword"
+                name="keyword"
+              />
+                <input class="input2"
+                  type="date"
+                  name="trip-end"
+                  value="2021-12-31"
+                  min="2021-03-17"
+                  max="2021-12-31"
+                />
+          </ul>
+          <ul class="location4">
+              <input class="input1"
+                type="text"
+                placeholder="Adult"
+                id="keyword"
+                name="keyword"
+              />
+              <input class="input2" type="number" id="tentacles" name="tentacles"
+              min="1" max="20">
+          </ul>
+          <ul class="location5">
+              <input class="input1"
+                type="text"
+                placeholder="Child"
+                id="keyword"
+                name="keyword"
+              />
+              <input class="input2" type="number" id="tentacles" name="tentacles"
+              min="1" max="10">
+          </ul>
+          <a class="searchBar" href="">
+            <p class="searchButton" href=""><span>Let's go trip</span><i class="fas fa-plane"></i></p>
+          </a>
+      
+      </div><!-- cont1 -->
+      <div class="cont2 clear">
+        <h2>이제, 여행은<br>가까운 곳에서</h2>
+        <a href=""><span>가까운 여행지 둘러보기</span></a>
+        <p>새로운 공간에 머물러 보세요. <br>
+        살아보기, 출장, 여행 등 다양한<br>
+        목적에 맞는 숙소를 찾아보세요.</p>
+      </div><!-- cont2 -->
+      <div class="cont3">
+        <h2>미국의 실시간 인기 숙소</h2>
+        <div class="cont31 cont3Box">
+          <div class="cont31Img cont3Img"></div><!-- cont31Img -->
+          <div class="cont31Txt cont3Txt">
+            <button>슈퍼호스트</button>
+            <p class="houseInfo">로프트 전체</p>
+            <p class="houseMark"><i class="fas fa-star"></i><span>4.89</span></p>
+            <h5>Cozy lovely smart house with FREE parking</h5>
+          </div><!-- cont31Txt -->
+        </div><!-- cont31 -->
+        <div class="cont32 cont3Box">
+          <div class="cont32Img cont3Img"></div><!-- cont32Img -->
+          <div class="cont32Txt cont3Txt">
+            <button>슈퍼호스트</button>
+            <p class="houseInfo">로프트 전체</p>
+            <p class="houseMark"><i class="fas fa-star"></i><span>4.89</span></p>
+            <h5>Cozy lovely smart house with FREE parking</h5>
+          </div><!-- cont32Txt -->
+        </div><!-- cont32 -->
+        <a class="seeMore clear" href=""><span>보기 (2,000개 이상)</span><span><i class="fas fa-chevron-right"></i></span></a>
+      </div><!-- cont3 -->
+      <div class="cont4">
+        <div class="cont4Box">
+          <a href=""><i class="far fa-comment-alt"></i></a>
+          <a href=""><h2>연중무휴 고객 지원</h2></a>
+          <a href=""><h6>24시간 언제라도 에어비앤비가 도와드립니다. 전 세계 어디에서나 에어비엔비 지원팀에 연락하여 언제든지 도움을 받으세요.</h6></a>
+        </div><!-- sp1 -->
+        <div class="cont4Box">
+          <a href=""><i class="fas fa-house-user"></i></a>
+          <a href=""><h2>글로벌 호스팅 요건</h2></a>
+          <a href=""><h6>에어비앤비의 모든 호스트는 호스팅 필수요건을 충족하고 정 수준 이상의 평점을 유지해야 합니다.</h6></a>
+        </div><!-- sp2 -->
+        <div class="cont4Box">
+          <a href=""><i class="far fa-star"></i></a>
+          <a href=""><h2>최고의 호스트</h2></a>
+          <a href=""><h6>깔끔하게 정돈된 침대 시트에서부터 브런치 맛집 정보까지, 에어비앤비 호스트는 현지인의 강점을 살린 다양한 서비스를 제공합니다.</h6></a>
+        </div><!-- sp3 -->
+      </div><!-- cont4 -->
+      <div class="cont5"></div><!-- cont5 -->
+    </section><!-- section -->
+    <footer id="footer">
+      <li class="fInfo">
+        <ul><a href="">ⓒ 2021 Airbnb,Inc. All rights reserved</a></ul>
+        <ul><a href="">개인정보 처리방침</a> &#183; <a href="">이용약관</a> &#183; <a href="">여행지 찾기</a></ul>
+      </li>
+      <div class="fSns">
+        <a href=""><i class="fab fa-facebook-f"></i></a>
+        <a href=""><i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+      </div>
+    </footer><!-- footer -->
+  </div><!-- wrap -->
+</body>
+</html>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/style(web).css">
+  
+  <script src="https://kit.fontawesome.com/aaef263f39.js" crossorigin="anonymous"></script>
+  
+  <title>Airbnb_web</title>
+</head>
+<body>
+  <div id="wrap">
+    <header class="headerFixed" id="header">
+      <video width="100%" height="auto" autoplay loop muted>
+        <source src="./video/mainVideo.mp4" type="video/mp4">
+      </video>
+      <h1 class="logo"><a href=""><i class="fab fa-airbnb"><p>airbnb</p></i></a></h1><!-- logo -->
+      <!-- <ul class="util">
+        <li><a href="">숙소검색</a></li>
+        <li><a href="">호스트</a></li>
+        <li><a href="">도움말</a></li>
+        <li><a href="">로그인</a></li>
+        <li><a href="">회원가입</a></li>
+      </ul> -->
+      <nav class="menu">
+        <div class="gnb clear">
+          <div class="depth1">
+            <h2><a href="">숙소검색</a></h2>
+            <ul class="depth2">
+              <li><a href="">국내/국외</a></li>
+              <li><a href="">가까운 장소</a></li>
+              <li><a href="">인기있는 장소</a></li>
+          </ul><!-- depth2 -->
+          </div><!-- depth1 -->
+          <div class="depth1">
+            <h2><a href="">호스트</a></h2>
+            <ul class="depth2">
+              <li><a href="">숙소 등록</a></li>
+              <li><a href="">숙소 관리</a></li>
+              <li><a href="">이용 내역</a></li>
+          </ul><!-- depth2 -->
+          </div><!-- depth1 -->
+          <div class="depth1">
+            <h2><a href="">도움말</a></h2>
+            <ul class="depth2">
+              <li><a href="">Q & A</a></li>
+              <li><a href="">고객센터</a></li>
+          </ul><!-- depth2 -->
+          </div><!-- depth1 -->
+          <div class="depth1">
+            <h2><a href="">로그인</a></h2>
+            <ul class="depth2 login">
+              <form id="searchBox" name="searchBox">
+                <input
+                  type="text"
+                  placeholder="ID : "
+                  id="keyword"
+                  name="keyword"
+                />
+                <form id="searchBox" name="searchBox">
+                  <input
+                    type="text"
+                    placeholder="Password : "
+                    id="keyword"
+                    name="keyword"
+                  />
+          </ul><!-- depth2 -->
+          </div><!-- depth1 -->
+          <div class="depth1">
+            <h2><a href="">회원가입</a></h2>
+          </div><!-- depth1 -->
+        </div><!-- gnb -->
+      </nav><!-- menu -->
+    </header><!-- header -->
+    
+    <div class="mainTxt">
+      <li><a href=""><i class="fab fa-airbnb"></i></a></li>
+      <li><a href="">어디로 가고 싶으신가요?</a></li>
+    </div><!-- mainTxt -->
+    <section id="mainSlider">
+      <video width="100%" height="auto" autoplay loop muted>
+        <source src="./video/mainVideo2.mp4" type="video/mp4">
+      </video>
+      <div class="mainBn clear">
+        <h2>에어비앤비에서 숙소를 경험하세요.</h2>
+        <p>혼자 하는 여행에 적합한 개인실부터 여럿이 함께하는 여행에 좋은<br>
+        '공간 전체' 숙소까지, 에어비앤비에 다 있습니다.</p>
+        <ul class="location1">
+            <input class="input1"
+              type="text"
+              placeholder="Location"
+              id="keyword"
+              name="keyword"
+            />
+            <input class="input2" list="places" name="browser" id="browser">
+            <datalist id="places">
+              <option value="Seoul . South Korea .">
+              <option value="Busan . South Korea .">
+              <option value="Dallas . United State America .">
+              <option value="Paris . France .">
+              <option value="New York . United State America .">
+            </datalist>
+        </ul>
+        <ul class="location2">
+            <input class="input1"
+              type="text"
+              placeholder="Check-in"
+              id="keyword"
+              name="keyword"
+            />
+            <input class="input2"
+              type="date"
+              name="trip-start"
+              value="2021-03-17"
+              min="2021-03-17"
+              max="2021-12-31"
+          />
+        </ul>
+        <ul class="location3">
+            <input class="input1"
+              type="text"
+              placeholder="Check-out"
+              id="keyword"
+              name="keyword"
+            />
+              <input class="input2"
+                type="date"
+                name="trip-end"
+                value="2021-12-31"
+                min="2021-03-17"
+                max="2021-12-31"
+              />
+        </ul>
+        <ul class="location4">
+            <input class="input1"
+              type="text"
+              placeholder="Adult"
+              id="keyword"
+              name="keyword"
+            />
+            <input class="input2" type="number" id="tentacles" name="tentacles"
+            min="1" max="20">
+        </ul>
+        <ul class="location5">
+            <input class="input1"
+              type="text"
+              placeholder="Child"
+              id="keyword"
+              name="keyword"
+            />
+            <input class="input3" type="number" id="tentacles" name="tentacles"
+            min="1" max="20">
+        </ul>
+        <a class="searchBar" href="">
+          <p class="searchButton" href=""><span>Let's go trip</span><i class="fas fa-plane"></i></p>
+        </a>
+      </div><!-- mainBn -->
+    </section><!-- mainSlider -->
+    <section id="mainSlider2">
+      <div class="msBn clear">
+        <h2>이제, 여행은<br>가까운 곳에서</h2>
+        <p>새로운 공간에 머물러 보세요. <br>
+        살아보기, 출장, 여행 등 다양한<br>
+        목적에 맞는 숙소를 찾아보세요.</p>
+        <a href=""><span>가까운 여행지 둘러보기</span></a>
+      </div>
+    </section><!-- mainSlider2 -->
+    <section id="mainSlider3">
+      <h2><a href="">미국 숙소에 직접 다녀간 게스트의 후기</a></h2>
+      <h4><a href="">게스트 후기 57,500,000개 이상, 평균 평점 4.8점(5점 만점)</a></h4>
+      <div class="ms3bnContainer clear">
+        <div class="ms3bn">
+          <a href=""><div class="bnImg1"></div></a>
+          <h5 class="starMark">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </h5>
+          <p class="comment">"정말 최고의 숙소였습니다. 따뜻한 아침을 맞이하는
+          상쾌함이 좋았습니다. 혼자 숙박하는데 너무 커서<br> 불편하긴 커녕 세상이 내 것인것만 같아 
+          행복에 겨워 보냈습니다. 이게 제 집이라면 얼마나 좋을까요...?"  </p>
+          <div class="commentId"> 
+            <div class="idImg"><a href=""><img src="./img/minyoung.jpg" alt=""></a></div>
+            <h6 class="idName">Minyoung Kim</h6>
+            <p class="idCountry">U.S.A</p>
+          </div><!-- commentId -->
+        </div><!-- ms3bn -->
+        <div class="ms3bn">
+          <a href=""><div class="bnImg2"></div></a>
+          <h5 class="starMark">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </h5>
+          <p class="comment">"산타바바라 여행동안 편안하고 아늑한 곳에서 머물 수 있어서 너무 좋았다. 사진과 같이 깔끔하고 지내기에
+          불편함이 없었다. 호스트 역시 친절하고 따뜻하게 대해줘서 감사했고, 프랑스로 돌아가고 싶지 않다"</p>
+          <div class="commentId"> 
+            <div class="idImg"><a href=""><img src="./img/mattise.jfif" alt=""></a></div>
+            <h6 class="idName">Henri Matisse</h6>
+            <p class="idCountry">France</p>
+          </div><!-- commentId -->
+        </div><!-- ms3bn -->
+        <div class="ms3bn">
+          <a href=""><div class="bnImg3"></div></a>
+          <h5 class="starMark">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </h5>
+          <p class="comment">"ah uh~ ah uh~ ar! rooff! (It was beautiful.)
+          bow-wow! woof! wal wal! (I was so happy.)<br>
+          bow~! raow! raow! (It was perfect, I don't want to go back my own.)</p>
+          <div class="commentId"> 
+            <div class="idImg"><a href=""><img src="./img/tany.jpg" alt=""></a></div>
+            <h6 class="idName">Tany</h6>
+            <p class="idCountry">Korea</p>
+          </div><!-- commentId -->
+        </div><!-- ms3bn -->
+      </div><!-- msbnContainer -->
+    </section><!-- mainSlider3-->
+    <section id="mainSp">
+      <div class="sp1 spBox clear">
+        <a class="spIcon" href=""><i class="far fa-comment-alt"></i></a>
+        <a href=""><h2>연중무휴 고객 지원</h2></a>
+        <a href=""><h6>24시간 언제라도 에어비앤비가 도와드립니다. 전 세계 어디에서나<br> 에어비엔비 지원팀에 연락하여 언제든지 도움을 받으세요.</h6></a>
+      </div><!-- sp1 -->
+      <div class="sp2 spBox clear">
+        <a class="spIcon" href=""><i class="fas fa-house-user"></i></a>
+        <a href=""><h2>글로벌 호스팅 요건</h2></a>
+        <a href=""><h6>에어비앤비의 모든 호스트는 호스팅 필수요건을 충족하고<br>일정 수준 이상의 평점을 유지해야 합니다.</h6></a>
+      </div><!-- sp2 -->
+      <div class="sp3 spBox clear">
+        <a class="spIcon" href=""><i class="far fa-star"></i></a>
+        <a href=""><h2>최고의 호스트</h2></a>
+        <a href=""><h6>깔끔하게 정돈된 침대 시트에서부터 브런치 맛집 정보까지,<br> 에어비앤비 호스트는 현지인의 강점을 살린 다양한 서비스를 제공합니다.</h6></a>
+      </div><!-- sp3 -->
+    </section><!-- mainSp -->
+    <section id="mainBn3">
+      <h2><a href="">미국의 실시간 인기 숙소</a></h2>
+      <div class="bn3cont clear">
+        <div class="bn3cont1">
+          <a href=""><img src="./img/bn3Img1.jpg" alt=""></a>
+          <button>슈퍼호스트</button>
+          <p class="houseInfo">전원주택전체</p>
+          <p class="houseMark"><i class="fas fa-star"></i> 5.0</p>
+          <h6><a href="">Cozy and Warm house in the Forest</a></h6>
+        </div><!-- bn3cont1 -->
+        <div class="bn3cont2">
+          <a href=""><img src="./img/bn3Img2.jpg" alt=""></a>
+          <button>슈퍼호스트</button>
+          <p class="houseInfo">게스트용 별채 전체</p>
+          <p class="houseMark"><i class="fas fa-star"></i> 4.9</p>
+          <h6><a href="">Beautiful Sunset house</a></h6>
+        </div><!-- bn3cont2 -->
+        <div class="bn3cont3">
+          <a href=""><img src="./img/bn3Img3.jpg" alt=""></a>
+          <button>플러스</button>
+          <p class="houseInfo">전원주택 전체</p>
+          <p class="houseMark"><i class="fas fa-star"></i> 4.9</p>
+          <h6><a href="">perfect swimming house</a></h6>
+        </div><!-- bn3cont3 -->
+        <div class="bn3cont4">
+          <a href=""><img src="./img/bn3Img4.jpg" alt=""></a>
+          <button>슈퍼호스트</button>
+          <p class="houseInfo">집 전체</p>
+          <p class="houseMark"><i class="fas fa-star"></i> 5.0</p>
+          <h6><a href="">Fancy fantastic house</a></h6>
+        </div><!-- bn3cont4 -->
+      </div><!-- bn3cont -->
+      <a class="seeMore" href=""><span>보기(2,000개 이상) <i class="fas fa-chevron-right"></i></span></a>
+    </section><!-- mainBn3 -->
+    <footer id="footer">
+      <li class="fInfo">
+        <ul><a href="">ⓒ 2021 Airbnb,Inc. All rights reserved</a></ul>
+        <ul><span>&#183;</span></ul>
+        <ul><a href="">개인정보 처리방침</a></ul>
+        <ul><span>&#183;</span></ul>
+        <ul><a href="">이용약관</a></ul>
+        <ul><span>&#183;</span></ul>
+        <ul><a href="">여행지 찾기</a></ul>
+      </li>
+      <div class="fSns">
+        <a href=""><i class="fab fa-facebook-f"></i></a>
+        <a href=""><i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+      </div>
+      </footer><!-- footer -->
+  </div>
+
+
+
+
+
+
+  <!-- <script>
+    window.onscroll = function() {myFunction()};
+    
+    var headerFixed = document.getElementById("header");
+    var sticky = headerFixed.offsetTop;
+    
+    function myFunction() {
+      
+      if (window.pageYOffset > sticky) {
+        headerFixed.classList.add("sticky");
+      } else {
+        headerFixed.classList.remove("sticky");
+      }
+      break;
+    }
+    </script> -->
+</body>
+</html>
